@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.geowarrior.DAK_wynik"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/dl_tekst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Długość"
+        android:layout_marginStart="53dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="53dp" />
+
+    <TextView
+        android:id="@+id/dlugosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="długość"
+        android:layout_marginEnd="141dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="140dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/az12"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="141dp" />
+
+    <TextView
+        android:id="@+id/az12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azymut12"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/azymut12_rad"
+        app:layout_constraintRight_toRightOf="@+id/az21"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/dl_tekst"
+        app:layout_constraintTop_toTopOf="@+id/azymut12_rad" />
+
+    <TextView
+        android:id="@+id/azymut12_rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="radiany"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/dlugosc"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/dlugosc" />
+
+    <TextView
+        android:id="@+id/az21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azymut21"
+        android:layout_marginStart="53dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/azymut21_rad"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="53dp" />
+
+    <TextView
+        android:id="@+id/azymut21_rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="radiany"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/azymut21_grad"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/azymut21_grad" />
+
+    <TextView
+        android:id="@+id/azymut12_grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="grady"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/azymut12_rad"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/azymut12_rad" />
+
+    <TextView
+        android:id="@+id/azymut12_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="stopnie"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/azymut12_grad"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/azymut12_grad" />
+
+    <TextView
+        android:id="@+id/azymut21_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="stopnie"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/azymut12_st"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/azymut21_grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="grady"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/azymut21_st"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/azymut21_st" />
+
+</android.support.constraint.ConstraintLayout>
