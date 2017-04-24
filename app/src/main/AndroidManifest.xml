@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".DAK" />
-        <activity android:name=".DAK_wynik"></activity>
+        <activity android:name=".DAK_wynik" />
+        <activity android:name=".Katy" />
+        <activity android:name=".Katy_wynik"></activity>
     </application>
 
 </manifest>
