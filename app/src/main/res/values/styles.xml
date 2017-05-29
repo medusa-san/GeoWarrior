@@ -18,7 +18,7 @@
 
     <style name="Theme.MyAppTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">#391c07</item>
-        <item name="android:title">"Krzysiu jest super"</item>
+        <item name="android:title">"GeoWarrior"</item>
         <item name="android:icon">@drawable/araragi_koyomi</item>
         <item name="android:showAsAction">always|withText</item>
 
