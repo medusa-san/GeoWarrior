@@ -4,45 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.geowarrior.Menu">
+    tools:context="com.example.admin.geowarrior.Menu"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/map3"
+    tools:layout_editor_absoluteX="0dp">
 
     <TextView
+        android:id="@+id/tekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wybierz pożądaną funkcję"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135"
+        android:background="#99d2b48c"
+        android:textColor="#5e2424"
+        android:textSize="20sp"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintLeft_creator="1" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="37dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.503" />
 
     <Button
         android:id="@+id/dl_az"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Długości i azymuty"
+        android:background="#99d2b48c"
+        android:textColor="#5e2424"
+        android:textSize="16sp"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/katy"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst"
+        app:layout_constraintRight_toRightOf="@+id/tekst"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="47dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginTop="42dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tekst"
+        />
 
     <Button
         android:id="@+id/katy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kąty"
-        tools:layout_constraintTop_creator="1"
+        android:background="#99d2b48c"
+        android:textColor="#5e2424"
+        android:textSize="16sp"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dl_az"
+        app:layout_constraintRight_toRightOf="@+id/dl_az"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@+id/dl_az" />
+
+    <Button
+        android:id="@+id/wciecia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wcięcia"
+        android:textColor="#5e2424"
+        android:background="#99d2b48c"
+        android:textSize="16sp"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/katy"
+        app:layout_constraintRight_toRightOf="@+id/katy"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@+id/katy" />
 
 </android.support.constraint.ConstraintLayout>
