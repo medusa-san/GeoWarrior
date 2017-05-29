@@ -112,7 +112,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/d2W"
         app:layout_constraintRight_toRightOf="@+id/textView2"
         android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/dl1W"
+
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="24dp"
         app:layout_constraintLeft_toLeftOf="@+id/textView2" />
