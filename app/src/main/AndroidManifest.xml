@@ -23,9 +23,10 @@
         <activity android:name=".Wciecia" />
         <activity android:name=".W_lin" />
         <activity android:name=".W_kat" />
-        <activity android:name=".W_katlin" />
         <activity android:name=".UnderConstruction" />
-        <activity android:name=".Error"></activity>
+        <activity android:name=".Error" />
+        <activity android:name=".WLin_wynik" />
+        <activity android:name=".WKat_wynik" />
     </application>
 
 </manifest>

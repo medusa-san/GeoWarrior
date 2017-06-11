@@ -31,10 +31,8 @@ public class DAK_wynik extends Activity {
             double x2 = Double.parseDouble(getIntent().getExtras().getString("X2"));
             double y2 = Double.parseDouble(getIntent().getExtras().getString("Y2"));
 
-
             double d;
             d = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
-
 
             double dX12;
             double dY12;
@@ -42,8 +40,9 @@ public class DAK_wynik extends Activity {
             double az12;
             dX12 = x2 - x1;
             dY12 = y2 - y1;
-            //k12=Math.atan(dY12/dX12);
             if (dX12 == 0 && dY12 == 0) {
+                Intent daIntent = new Intent(DAK_wynik.this,Error.class);
+                startActivity(daIntent);
                 azymut12r.setText("Błąd");
                 azymut21r.setText("Błąd");
                 return;
@@ -71,8 +70,6 @@ public class DAK_wynik extends Activity {
             double az21s;
             double az12g;
             double az12s;
-            //if (dX12==0&&dY12==0) azymut21r.setText("Podaj współrzędne 2 punktów");
-            //else {
 
             az12g = az12 * 200 / Math.PI;
             az12s = az12 * 180 / Math.PI;
@@ -85,27 +82,15 @@ public class DAK_wynik extends Activity {
                 az21g = 400 - az12g;
                 az21s = 360 - az12s;
             }
-            //}
-            //double az21=az12+Math.PI;
-
-
-            //final String stopien  = "\u00b0";
 
             dlugosc1.setText(String.format("%.4f", d) + " m");
-        /*if (dX12==0&&dY12==0){
-            azymut12r.setText("Podaj współrzędne 2 punktów");
-            azymut21r.setText("Podaj współrzędne 2 punktów");
-        }
 
-        else {
-         */
             azymut12r.setText(String.format("%.4f", az12) + " rad");
             azymut21r.setText(String.format("%.4f", az21) + " rad");
             azymut12g.setText(String.format("%.4f", az12g) + "grad");
             azymut21g.setText(String.format("%.4f", az21g) + " grad");
             azymut12s.setText(String.format("%.4f", az12s) + "\u00b0");
             azymut21s.setText(String.format("%.4f", az21s) + "\u00b0");
-            //}
         }
         catch(Exception e){
             Intent daIntent = new Intent(DAK_wynik.this,Error.class);

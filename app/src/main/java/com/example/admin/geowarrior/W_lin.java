@@ -30,9 +30,9 @@ public class W_lin extends Activity {
         d2W = (EditText) findViewById(R.id.d2W);
 
 
-        /*mButton.setOnClickListener(new View.OnClickListener() {
+        mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(W_lin.this, Wynik_lin.class);
+                Intent intent = new Intent(W_lin.this, WLin_wynik.class);
                 intent.putExtra("X1", xX1.getText().toString());
                 intent.putExtra("Y1", yY1.getText().toString());
                 intent.putExtra("X2", xX2.getText().toString());
@@ -42,6 +42,6 @@ public class W_lin extends Activity {
                 startActivity(intent);
             }
 
-        });*/
+        });
     }
 }

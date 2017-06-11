@@ -18,12 +18,7 @@ public class DAK extends Activity {
     EditText yY1;
     EditText yY2;
 
-    /*public DAK () {
-        x1=x1();
-        y1=y1();
-        x2=x2();
-        y2=y2();
-    }*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

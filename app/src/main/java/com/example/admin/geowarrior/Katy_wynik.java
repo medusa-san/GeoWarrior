@@ -37,6 +37,8 @@ public class Katy_wynik extends Activity {
             dX12 = x2 - x1;
             dY12 = y2 - y1;
             if (dX12 == 0 && dY12 == 0) {
+                Intent daIntent = new Intent(Katy_wynik.this,Error.class);
+                startActivity(daIntent);
                 katy123.setText("Błąd");
                 katy231.setText("Błąd");
                 katy312.setText("Błąd");
@@ -67,6 +69,8 @@ public class Katy_wynik extends Activity {
             dX23 = x3 - x2;
             dY23 = y3 - y2;
             if (dX23 == 0 && dY23 == 0) {
+                Intent daIntent = new Intent(Katy_wynik.this,Error.class);
+                startActivity(daIntent);
                 katy123.setText("Błąd");
                 katy231.setText("Błąd");
                 katy312.setText("Błąd");
@@ -97,6 +101,8 @@ public class Katy_wynik extends Activity {
             dX31 = x1 - x3;
             dY31 = y1 - y3;
             if (dX31 == 0 && dY31 == 0) {
+                Intent daIntent = new Intent(Katy_wynik.this,Error.class);
+                startActivity(daIntent);
                 katy123.setText("Błąd");
                 katy231.setText("Błąd");
                 katy312.setText("Błąd");

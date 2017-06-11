@@ -35,7 +35,7 @@ public class Menu extends Activity {
         });
         wButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent wIntent = new Intent(Menu.this,UnderConstruction.class);
+                Intent wIntent = new Intent(Menu.this,Wciecia.class);
                 startActivity(wIntent);
             }
 

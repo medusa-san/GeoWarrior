@@ -33,14 +33,14 @@ public class W_kat extends Activity {
 
         mButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                /*Intent intent = new Intent(W_lin.this, Wynik_kat.class);
+                Intent intent = new Intent(W_kat.this, WKat_wynik.class);
                 intent.putExtra("X1", xX1.getText().toString());
                 intent.putExtra("Y1", yY1.getText().toString());
                 intent.putExtra("X2", xX2.getText().toString());
                 intent.putExtra("Y2", yY2.getText().toString());
                 intent.putExtra("K1W", k1W.getText().toString());
                 intent.putExtra("K2W", k2W.getText().toString());
-                startActivity(intent);*/
+                startActivity(intent);
             }
 
         });

@@ -11,7 +11,7 @@ public class Wciecia extends Activity {
 
     Button lButton;
     Button kButton;
-    Button klButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class Wciecia extends Activity {
         setContentView(R.layout.activity_wciecia);
         lButton = (Button) findViewById(R.id.lin);
         kButton = (Button) findViewById(R.id.kat);
-        klButton = (Button) findViewById(R.id.kat_lin);
+
 
         lButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -35,12 +35,6 @@ public class Wciecia extends Activity {
             }
 
         });
-        klButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent klIntent = new Intent(Wciecia.this,W_katlin.class);
-                startActivity(klIntent);
-            }
 
-        });
     }
 }
